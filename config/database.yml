@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: yannick
+  password:  <%= ENV['MYFIRSTRUBYAPP_DATABASE_PASSWORD'] %>
+  host: localhost
+
+development:
+  <<: *default
+  database: mysecondrubyapp_development
+  password: <%= ENV['MYFIRSTRUBYAPP_DATABASE_PASSWORD'] %>
+
+
+test:
+  <<: *default
+  database: mysecondrubyapp_test
+
+production:
+  <<: *default
+  database: mysecondrubyapp_production
+  password: <%= ENV['MYFIRSTRUBYAPP_DATABASE_PASSWORD'] %>
