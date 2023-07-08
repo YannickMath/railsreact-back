@@ -47,3 +47,6 @@ gem 'pg'
 
 # Dotenv
 gem 'dotenv-rails', groups: [:development, :test]
+
+# cors
+gem 'rack-cors'
