@@ -50,3 +50,9 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # cors
 gem 'rack-cors'
+
+# carrierwave
+gem 'carrierwave'
+
+# cloudinary
+gem 'cloudinary'
