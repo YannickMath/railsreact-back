@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   resources :images, only: [:new, :create, :index, :show, :update, :destroy]
 
+
+  resources :profiles, only: [:edit, :update]
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   # ressources :users, only: [:index, :show, :update, :destroy]
