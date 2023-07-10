@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# app/controllers/users/registrations_controller.rb
 class Users::RegistrationsController < Devise::RegistrationsController
   before_action :configure_sign_up_params, only: [:create]
   before_action :configure_account_update_params, only: [:update]
@@ -60,10 +61,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super(resource)
   end
 
-  private
+  # private
 
-  def account_update_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :image)
-  end
+  # def account_update_params
+  #   params.require(:user).permit(:email, :password, :password_confirmation, :image)
+  # end
 
 end
+
+
+

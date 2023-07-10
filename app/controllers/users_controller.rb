@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
+  
 
-    User : has_one_attached :photo
+    User.has_one_attached :photo
+    
+   
+
     
 end

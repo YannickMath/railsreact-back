@@ -66,4 +66,12 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # allow to send mail in development mode to user for reset_password
+  config.action_mailer.perform_deliveries = true
+  
+  # allow letter_opener to open mail in browser
+  config.action_mailer.delivery_method = :letter_opener
+
+
+
 end
